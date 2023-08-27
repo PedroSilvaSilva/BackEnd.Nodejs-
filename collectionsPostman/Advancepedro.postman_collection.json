@@ -218,7 +218,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer {{token}}",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIwYmNiZGJkYjFkYzljZDAxOTM5MGI0NTdmNzQzY2U3MjplMmZlIiwiaWF0IjoxNjkzMTU3NTg1LCJleHAiOjE2OTM3NjIzODV9.Ajt_sdvi7UEmat4wnVE1ZGhk8ml-kVHKow9CJmIqDO4",
 								"type": "text"
 							}
 						],
@@ -238,6 +238,73 @@
 							],
 							"path": [
 								"new-posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Posts",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Beare eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5MDVjOTgzYzFiMjUwMDA5NWQ5MDQzZWRhZmMzMmI2MjozMGJmIiwiaWF0IjoxNjkzMTU4Njk0LCJleHAiOjE2OTM3NjM0OTR9.wOYMaQqD_I6_znUdXEPwvTTxK8F14KazEIokaCc_GMo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image\":\"https://www.teste.pt/imagemViagem12222.jpg\",\r\n    \"description\":\"Minha viagem a Europa com amigos22222\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/post/11",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"post",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Like Post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Beare eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5MDVjOTgzYzFiMjUwMDA5NWQ5MDQzZWRhZmMzMmI2MjozMGJmIiwiaWF0IjoxNjkzMTU4Njk0LCJleHAiOjE2OTM3NjM0OTR9.wOYMaQqD_I6_znUdXEPwvTTxK8F14KazEIokaCc_GMo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image\":\"https://www.teste.pt/imagemViagem12222.jpg\",\r\n    \"description\":\"Minha viagem a Europa com amigos22222\"\r\n    \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/add-like//11",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"add-like",
+								"",
+								"11"
 							]
 						}
 					},
@@ -276,6 +343,76 @@
 							"path": [
 								"delete-posts",
 								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Posts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhOGE5MTY0YzcxYjczZjAzOTBlZDEwNjJjYTY4YWI1NTo5MjIwIiwiaWF0IjoxNjkzMTY0Mzg1LCJleHAiOjE2OTM3NjkxODV9.nqrvhZet3j-EKYD2cuB9UHV3UqbfLLr5eQlXYfuM8jQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/list-posts",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"list-posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Posts",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhOGE5MTY0YzcxYjczZjAzOTBlZDEwNjJjYTY4YWI1NTo5MjIwIiwiaWF0IjoxNjkzMTY0Mzg1LCJleHAiOjE2OTM3NjkxODV9.nqrvhZet3j-EKYD2cuB9UHV3UqbfLLr5eQlXYfuM8jQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}/all-posts",
+							"host": [
+								"{{API_URL}}"
+							],
+							"path": [
+								"all-posts"
 							]
 						}
 					},
