@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/user.schema.json",
+    "title": "CreatePostsSchema",
+    "description": "Posts",
+    "type": "object",
+    "properties": {
+        "image": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "image",
+        "description"
+    ]
+}
